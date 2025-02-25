@@ -1,0 +1,492 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.card {
+    box-shadow: 0px 2px 10px black;
+    background-color: rgb(52, 50, 151) ;
+    margin: 0 10px;
+}
+
+
+/* Navbar Styles */
+.navbar {
+    background-color: rgb(52, 50, 151) ;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0px 2px 10px black;
+}
+
+.simba {
+    margin-left: auto;
+}
+
+/* Navbar Brand */
+.navbar-brand img {
+    width: 190px;
+    height: 65px;
+}
+
+/* Responsive Navbar */
+@media (max-width: 1200px) {
+    .navbar a {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar a {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .simba {
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+
+    .navbar a {
+        font-size: 0.9rem;
+    }
+
+    .navbar .dropstart {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 0.5rem;
+    }
+
+    .navbar a {
+        font-size: 0.8rem;
+    }
+}
+
+/* Table Styles */
+.daftar-paket {
+    width: 100%;
+    margin: 1em 0;
+    border-collapse: collapse;
+    background-color: #69a4fc;
+    color: #030303;
+    border-radius: 0.4em;
+    overflow: hidden;
+}
+
+/* Table Headers and Cells */
+.daftar-paket th {
+    background-color: rgb(39, 111, 212);
+    padding: 0.75em;
+    text-align: center;
+    font-size: 1rem;
+}
+.daftar-paket td {
+    padding: 0.75em;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* Table Row Colors */
+.daftar-paket tbody tr:nth-child(odd) {
+    background-color: hwb(220 98% 1%);
+}
+
+.daftar-paket tbody tr:nth-child(even) {
+    background-color: #33BBFF;
+}
+
+/* Table Header Styles */
+thead {
+    background-color: rgb(25, 59, 112);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+
+/* Responsive Table */
+@media (max-width: 1200px) {
+    .daftar-paket th,
+    .daftar-paket td {
+        font-size: 0.9rem;
+        padding: 0.6em;
+    }
+}
+
+@media (max-width: 992px) {
+    .daftar-paket th,
+    .daftar-paket td {
+        font-size: 0.85rem;
+        padding: 0.5em;
+    }
+}
+
+@media (max-width: 768px) {
+    .daftar-paket th,
+    .daftar-paket td {
+        font-size: 0.8rem;
+        padding: 0.4em;
+    }
+
+    .daftar-paket {
+        width: auto;
+        overflow-x: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .daftar-paket th,
+    .daftar-paket td {
+        font-size: 0.75rem;
+        padding: 0.3em;
+    }
+
+    .daftar-paket {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+/* Add smooth scrolling for better user experience */
+.daftar-paket::-webkit-scrollbar {
+    height: 8px;
+}
+
+.daftar-paket::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.daftar-paket::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.card-title {
+    color: white;
+    font-style: italic;
+    font-weight: 300;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+  /* Gaya untuk body */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #6da4db;
+  }
+
+  /* Gaya untuk judul */
+  h2 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+  }
+
+  /* Gaya dasar tabel */
+  table.display {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 90px 0 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Header tabel */
+  table.display thead th {
+    background-color: rgb(25, 59, 112);
+    color: white;
+    text-align: left;
+    padding: 10px;
+  }
+
+  /* Sel tabel */
+  table.display tbody td {
+    padding: 10px;
+    border: 1px solid #dee2e6;
+    vertical-align: middle;
+  }
+
+  
+  /* Hover efek untuk baris */
+  table.display tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+
+  /* Gaya untuk baris zebra */
+  table.display tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  /* Gaya pagination */
+  div.dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 6px 12px;
+    margin: 5 2px;
+    border: 1px solid #dee2e6;
+    background-color: white;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  div.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background-color: #007bff;
+    color: white;
+  }
+
+  /* Gaya tombol aktif */
+
+  div.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    background-color: rgb(220, 191, 63);
+    color: white !important;
+  }
+  div.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    background-color: rgb(180, 157, 52);
+    color: white !important;
+  }
+
+  div.dataTables_wrapper .dataTables_length select {
+    color: black;
+    background-color: white;
+    border-color: black;
+  }
+
+  div.dataTables_wrapper .dataTables_length select:hover{
+    color: black;
+    background-color: white;
+    border-color: black;
+    box-shadow: 0px 6px 6px inline;
+  }
+
+  div.dataTables_wrapper .dataTables_filter input {
+    background-color: rgb(153, 187, 255);
+    color: black;
+    margin-bottom: 10px;
+  }
+
+
+  /* Gaya untuk elemen pencarian */
+  div.dataTables_wrapper .dataTables_filter input {
+    margin-left: 5px;
+    padding: 5px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+  }
+  
+  div.dataTables_wrapper .dataTables_filter label {
+    color : rgb(0, 0, 0);
+  }
+  /* Gaya panjang baris */
+  div.dataTables_wrapper .dataTables_length select {
+    margin-left: 5px;
+    padding: 5px;
+    background-color: rgb(153, 187, 255);
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+  }
+  div.dataTables_wrapper .dataTables_length label {
+    color : rgb(0, 0, 0);
+  }
+
+  /* Gaya informasi tabel */
+  div.dataTables_wrapper .dataTables_info {
+    margin-top: 10px;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+  }
+
+  div.dataTables_wrapper .dataTables_paginate {
+    margin-bottom: 12px;
+  }
+
+  .d-flex {
+    display: flex;
+    align-items: center; /* Vertikal center */
+    gap: 10px; /* Menambahkan jarak antara elemen */
+}
+
+.dropdown {
+    margin-left: 10px; /* Jika ingin menambahkan jarak kiri antara dropdown dan elemen sebelumnya */
+}
+.dropdown img{
+    background-color: rgb(153, 187, 255);
+    padding: 6px;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.dataTables_length {
+    margin-right: 10px; /* Jika ingin menambahkan jarak kanan antara dataTables_length dan dropdown */
+}
+
+  .btn-side{
+    background: none;   /* Menghilangkan latar belakang */
+    border: none;       /* Menghilangkan border */
+    color: #fff;        /* Membuat teks tombol menjadi putih (sesuaikan dengan kebutuhan) */
+    font-size: 24px;    /* Menyesuaikan ukuran font jika diperlukan */
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .navbar{
+    transition: 0.3s;
+  }
+
+  .content{
+    transition: 0.3s;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(17, 34, 78);
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    color: white;
+    z-index: 100;
+    }
+
+
+.sidebar a {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    z-index: 100;
+}
+
+
+
+    .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    }
+    
+    .sidebar ul li {
+    padding: 8px 20px;
+    border-bottom: 0.5px solid rgba(20, 165, 255, 0.3);
+    }
+    .sidebar ul li:hover {
+    padding: 8px 20px;
+    border-bottom: 0.5px solid rgba(20, 165, 255, 0.3);
+    background-color: rgb(15, 30, 69)
+    }
+    
+    .sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: large;
+    }
+    
+    .sidebar ul li a:hover {
+    color: rgb(255, 156, 36);
+    }
+    
+    .navbar-brand button:hover {
+    color: rgb(255, 156, 36);
+    }
+
+    /* Tombol close */
+    .close-btn {
+    position: absolute;
+    display:inline-flex;
+    top: 10px;
+    right: 10px;
+    font-size: 35px;
+    color: white;
+    background-color: rgba(17, 34, 78);
+    border: none;
+    cursor: pointer;
+    }
+    .close-btn:hover {
+    color: rgb(255, 156, 36);
+    }
+
+.table-responsive {
+    overflow-x: auto; /* Aktifkan scroll horizontal */
+    max-width: 100%; /* Membatasi lebar jika diperlukan */
+}
+
+#example_wrapper {
+    overflow-x: auto; /* Pastikan wrapper juga dapat discroll jika perlu */
+}
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+        .dropdown button {
+            padding: 5px 10px;
+            border-radius: 6px;
+            background-color: white;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            border-radius: 6px;
+            min-width: 250px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            z-index: 1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        form  {
+            background-color:  rgb(224, 234, 244);
+            border-radius: 6px;
+            padding: 5px;
+            margin: 10px;
+        }
+        .btn-success {
+            margin-top: 10px;
+        }
+        .sorting::after {
+            margin-top: 3px;
+        }
+
+        table .btn {
+            margin: auto 0px;
+        }
+
+.alert {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+}

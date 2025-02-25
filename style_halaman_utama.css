@@ -1,0 +1,251 @@
+.header {
+    background-color: rgb(52, 50, 151) ;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Membuat header tetap di atas */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 80px;
+}
+
+.header img {
+    width: 190px;
+    height: 65;
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    position: relative;
+    bottom: 8px;
+}
+
+.option {
+    display: inline-block;
+    float: right;
+    margin-right: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.option ul li {
+    margin-top: 10px;
+    margin-left: 20px;
+    display: inline-block;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.option ul li button .btn:hover {
+    background-color: rgb(61, 122, 208);
+}
+
+.image {
+    width: 100%;
+    height: 100vh; /* Menjaga tinggi gambar sama dengan tinggi viewport */
+    overflow: hidden; /* Memastikan gambar yang melebihi elemen ini terpotong */
+    position: relative; /* Agar bisa memposisikan gambar secara absolut di dalam container */
+}
+
+.image img {
+    width: 100%;
+    height: 737px;
+    float: left;
+    display: inline;
+    opacity: 1;
+    color: black;
+    max-width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+}
+
+.welcome {
+    background-color: rgba(0, 0, 0, 0.656);
+    width: 400px;
+    height: 100px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    /* Awal dalam keadaan kecil */
+    box-shadow: 0px 6px 15px rgba(255, 255, 255, 0.894);
+    animation: grow 2s forwards;
+    /* Memulai animasi grow */
+}
+
+.welcome h1 {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 40px;
+    color: white;
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.785);
+    text-align: center;
+    margin: 0;
+    /* Menghapus margin default */
+    position: relative;
+    bottom: 20px;
+}
+
+@keyframes grow {
+    from {
+        transform: translate(-50%, -50%) scale(0);
+        /* Ukuran kecil di awal */
+        opacity: 0;
+        /* Tidak terlihat di awal */
+    }
+    to {
+        transform: translate(-50%, -50%) scale(1);
+        /* Ukuran normal di akhir */
+        opacity: 1;
+        /* Sepenuhnya terlihat di akhir */
+    }
+}
+
+.elemen1 img {
+    width: 700px;
+    height: 700px;
+    opacity: 0.4;
+    position: absolute;
+    z-index: -1;
+    left: 700px;
+}
+.close {
+    width: 50px;
+    border: 0px;
+    position: relative;
+    left: 22rem;
+}
+.modal-content {
+
+    width: 80%;
+    height: auto;
+    padding: 0px;
+    border-radius: 18px;
+    margin: 150px auto;
+}
+/* Styling untuk form login */
+.containerform {
+    width: 75%;
+    max-width: 350px;
+    width: 300px;
+    margin: 0 auto;
+    padding-bottom: 20px; /* Memberikan jarak dari atas */
+}
+
+/* Form login */
+.registration-form {
+    position: relative; /* Membuat form menjadi relatif agar tombol close posisinya bisa relatif terhadap form */
+    background-color: rgb(255, 255, 255);
+    padding: 0px 0px 10px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* Tombol Close */
+.close-btn {
+    position: absolute;
+    top: 10px;  /* Posisi vertikal dari atas form */
+    right: 10px;  /* Posisi horizontal dari kanan form */
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: #000;
+    cursor: pointer;
+	width: 50px;
+	margin: 0px auto;
+}
+
+.close-btn:hover {
+    color: red;  /* Memberikan efek hover */
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.logo img {
+    display: block;
+    background-color: white;
+    border-radius: 12px;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+
+.form-group label {
+    color: rgb(0, 0, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 6px;
+}
+
+.form-group input {
+    background-color: rgb(180, 198, 255);
+    font-family: 'Arial', Arial, sans-serif;
+    font-weight: 100;
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+.form-control {
+    height: 35px;
+}
+button {
+    padding: 8px 20px;
+    border-radius: 7px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    margin-top: 8px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Styling untuk link "lupa kata sandi" */
+.lupakatasandi {
+    font-size: 14px;
+    text-align: right;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Media Queries untuk perangkat mobile */
+@media screen and (max-width: 600px) {
+    .registration-form {
+        width: 90%;
+        margin-top: 50px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    button {
+        padding: 10px 20px;
+    }
+
+    .form-group input {
+        padding: 10px;
+    }
+}
+.btn {
+    margin: 0px;
+}
